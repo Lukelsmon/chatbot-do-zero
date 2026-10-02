@@ -90,23 +90,13 @@ client.on("message", async (msg) => {
       await client.sendMessage(
         msg.from,
         `${saudacao}! 👋\n\n` +
-        `Essa mensagem foi enviada automaticamente pelo robô 🤖\n\n` +
-        `Na versão PRO você vai além: desbloqueie tudo!.\n\n` +
-        '✍️ Envio de textos\n' +
-            '🎙️ Áudios\n' +
-            '🖼️ Imagens\n' +
-            '🎥 Vídeos\n' +
-            '📂 Arquivos\n\n' +
-            '💡 Simulação de "digitando..." e "gravando áudio"\n' +
-            '🚀 Envio de mensagens em massa\n' +
-            '📇 Captura automática de contatos\n' +
-            '💻 Aprenda como deixar o robô funcionando 24 hrs, com o PC desligado\n' +
-            '✅ E 3 Bônus exclusivos\n\n' +
-            '🔥 Adquira a versão PRO agora: https://pay.kiwify.com.br/FkTOhRZ?src=pro');
-      
+          `Essa mensagem foi enviada automaticamente pelo robô 🤖\n\n` +
+          `📌 Menu principal:\n` +
+          `1 - Ver horários\n` +
+          `2 - Falar com suporte\n` +
+          `3 - Ver campanhas`
+      );
     }
-
-
   } catch (error) {
     console.error("❌ Erro no processamento da mensagem:", error);
   }
